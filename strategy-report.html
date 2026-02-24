@@ -16,30 +16,31 @@
         }
 
         :root {
-            --bg: #06080d;
-            --surface: #0d1117;
-            --surface2: #161b22;
-            --surface3: #21262d;
-            --accent: #7c6aef;
-            --accent2: #a78bfa;
-            --accent3: #c4b5fd;
-            --gold: #f5a623;
-            --gold2: #fbbf24;
-            --gold3: #fde68a;
-            --teal: #0ea5e9;
-            --teal2: #38bdf8;
-            --teal3: #7dd3fc;
-            --emerald: #10b981;
-            --emerald2: #34d399;
-            --rose: #f43f5e;
-            --rose2: #fb7185;
-            --orange: #f97316;
-            --orange2: #fb923c;
-            --text: #f0f6fc;
-            --text2: #8b949e;
-            --text3: #484f58;
-            --border: #21262d;
-            --border2: #30363d;
+            /* Hermès Palette */
+            --bg: #1a1612;
+            --surface: #221e19;
+            --surface2: #2c2720;
+            --surface3: #37312a;
+            --accent: #e8621a;
+            --accent2: #f07c3e;
+            --accent3: #f5a66a;
+            --gold: #c9a84c;
+            --gold2: #d4b85e;
+            --gold3: #e5d08a;
+            --teal: #c9a84c;
+            --teal2: #d4b85e;
+            --teal3: #e5d08a;
+            --emerald: #c9a84c;
+            --emerald2: #d4b85e;
+            --rose: #e8621a;
+            --rose2: #f07c3e;
+            --orange: #e8621a;
+            --orange2: #f07c3e;
+            --text: #f5f0e8;
+            --text2: #a89e91;
+            --text3: #6d6358;
+            --border: #37312a;
+            --border2: #4a4238;
         }
 
         body {
@@ -86,6 +87,7 @@
         .topbar-brand span {
             background: linear-gradient(135deg, var(--accent), var(--gold));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent
         }
 
@@ -93,9 +95,9 @@
             font-size: 11px;
             padding: 4px 12px;
             border-radius: 100px;
-            background: rgba(124, 106, 239, .1);
+            background: rgba(232, 98, 26, .1);
             color: var(--accent2);
-            border: 1px solid rgba(124, 106, 239, .2);
+            border: 1px solid rgba(232, 98, 26, .2);
             font-weight: 600;
             letter-spacing: .5px
         }
@@ -118,7 +120,7 @@
             border-radius: 50%;
             top: -200px;
             right: -200px;
-            background: radial-gradient(circle, rgba(124, 106, 239, .08), transparent 70%);
+            background: radial-gradient(circle, rgba(232, 98, 26, .06), transparent 70%);
             animation: float 15s ease-in-out infinite
         }
 
@@ -130,7 +132,7 @@
             border-radius: 50%;
             bottom: -100px;
             left: -100px;
-            background: radial-gradient(circle, rgba(245, 166, 35, .05), transparent 70%);
+            background: radial-gradient(circle, rgba(201, 168, 76, .05), transparent 70%);
             animation: float 20s ease-in-out infinite reverse
         }
 
@@ -198,18 +200,21 @@
         .grad-purple {
             background: linear-gradient(135deg, var(--accent), var(--accent3));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent
         }
 
         .grad-gold {
             background: linear-gradient(135deg, var(--gold), var(--gold3));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent
         }
 
         .grad-teal {
             background: linear-gradient(135deg, var(--teal), var(--teal3));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent
         }
 
@@ -285,33 +290,33 @@
         }
 
         .stag-p {
-            background: rgba(124, 106, 239, .08);
+            background: rgba(232, 98, 26, .08);
             color: var(--accent2);
-            border: 1px solid rgba(124, 106, 239, .15)
+            border: 1px solid rgba(232, 98, 26, .15)
         }
 
         .stag-g {
-            background: rgba(245, 166, 35, .08);
+            background: rgba(201, 168, 76, .08);
             color: var(--gold2);
-            border: 1px solid rgba(245, 166, 35, .15)
+            border: 1px solid rgba(201, 168, 76, .15)
         }
 
         .stag-t {
-            background: rgba(14, 165, 233, .08);
-            color: var(--teal2);
-            border: 1px solid rgba(14, 165, 233, .15)
+            background: rgba(201, 168, 76, .08);
+            color: var(--gold2);
+            border: 1px solid rgba(201, 168, 76, .15)
         }
 
         .stag-e {
-            background: rgba(16, 185, 129, .08);
-            color: var(--emerald2);
-            border: 1px solid rgba(16, 185, 129, .15)
+            background: rgba(201, 168, 76, .08);
+            color: var(--gold2);
+            border: 1px solid rgba(201, 168, 76, .15)
         }
 
         .stag-r {
-            background: rgba(244, 63, 94, .08);
-            color: var(--rose2);
-            border: 1px solid rgba(244, 63, 94, .15)
+            background: rgba(232, 98, 26, .08);
+            color: var(--accent2);
+            border: 1px solid rgba(232, 98, 26, .15)
         }
 
         .sh {
@@ -449,8 +454,8 @@
         }
 
         .ix-card.core {
-            border-color: rgba(124, 106, 239, .3);
-            background: linear-gradient(135deg, rgba(124, 106, 239, .03), rgba(245, 166, 35, .02))
+            border-color: rgba(232, 98, 26, .3);
+            background: linear-gradient(135deg, rgba(232, 98, 26, .03), rgba(201, 168, 76, .02))
         }
 
         .ix-card h3 {
@@ -532,28 +537,28 @@
         }
 
         .fn1 {
-            background: rgba(124, 106, 239, .1);
+            background: rgba(232, 98, 26, .1);
             color: var(--accent2)
         }
 
         .fn2 {
-            background: rgba(245, 166, 35, .1);
+            background: rgba(201, 168, 76, .1);
             color: var(--gold2)
         }
 
         .fn3 {
-            background: rgba(14, 165, 233, .1);
-            color: var(--teal2)
+            background: rgba(201, 168, 76, .1);
+            color: var(--gold2)
         }
 
         .fn4 {
-            background: rgba(16, 185, 129, .1);
-            color: var(--emerald2)
+            background: rgba(232, 98, 26, .1);
+            color: var(--accent2)
         }
 
         .fn5 {
-            background: rgba(244, 63, 94, .1);
-            color: var(--rose2)
+            background: rgba(201, 168, 76, .1);
+            color: var(--gold2)
         }
 
         .flow-body h3 {
@@ -575,9 +580,9 @@
             border-radius: 100px;
             font-size: 11px;
             font-weight: 600;
-            background: rgba(124, 106, 239, .06);
+            background: rgba(232, 98, 26, .06);
             color: var(--accent3);
-            border: 1px solid rgba(124, 106, 239, .12)
+            border: 1px solid rgba(232, 98, 26, .12)
         }
 
         /* Compare Table */
@@ -699,8 +704,8 @@
         }
 
         .cta-box {
-            background: linear-gradient(135deg, rgba(124, 106, 239, .06), rgba(245, 166, 35, .04));
-            border: 1px solid rgba(124, 106, 239, .15);
+            background: linear-gradient(135deg, rgba(232, 98, 26, .06), rgba(201, 168, 76, .04));
+            border: 1px solid rgba(232, 98, 26, .15);
             border-radius: 24px;
             padding: 56px 40px;
             max-width: 720px;
@@ -1300,25 +1305,25 @@
 
             <div class="cg">
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(124,106,239,.1)">🍻</div>
+                    <div class="cd-icon" style="background:rgba(232,98,26,.1)">🍻</div>
                     <h3>晚餐圓桌（不是會議室）</h3>
                     <p>20-30 位 SME 老闆的私密網路。在地、面對面、有溫度。南台灣的信任建立方式不是 LinkedIn，是吃飯。月會 = 在地餐廳包廂，不是線上會議。</p>
-                    <div class="tag-inline" style="background:rgba(124,106,239,.06);color:var(--accent3)">年費
+                    <div class="tag-inline" style="background:rgba(232,98,26,.06);color:var(--accent3)">年費
                         NT$60,000-120,000/位</div>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(245,166,35,.1)">🔥</div>
+                    <div class="cd-icon" style="background:rgba(201,168,76,.1)">🔥</div>
                     <h3>冷啟動 = 保險客戶</h3>
                     <p><strong>她不需要從零開始。</strong>現有的保險經紀客戶就是 Day 1 信任圈。他們已經信任 Jannice 處理風險。從保險話題延伸到 ESG、營運、跨境——自然且無摩擦。
                     </p>
-                    <div class="tag-inline" style="background:rgba(245,166,35,.06);color:var(--gold2)">Day 1 即有 8-15
+                    <div class="tag-inline" style="background:rgba(201,168,76,.06);color:var(--gold2)">Day 1 即有 8-15
                         位種子成員</div>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(14,165,233,.1)">📡</div>
+                    <div class="cd-icon" style="background:rgba(201,168,76,.1)">📡</div>
                     <h3>風險信號情報網</h3>
                     <p>圓桌不只是社交——它是情報網路。「我的 3 個客戶剛被標記 X 法規」「Y 供應鏈出問題了」→ 這種信號 Google 找不到、AI 生成不了。人際情報是最強壁壘。</p>
-                    <div class="tag-inline" style="background:rgba(14,165,233,.06);color:var(--teal2)">Bloomberg
+                    <div class="tag-inline" style="background:rgba(201,168,76,.06);color:var(--gold2)">Bloomberg
                         Terminal for 南台灣 SME</div>
                 </div>
             </div>
@@ -1385,25 +1390,25 @@
 
             <div class="cg">
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(244,63,94,.1)">🔴</div>
+                    <div class="cd-icon" style="background:rgba(232,98,26,.1)">🔴</div>
                     <h3>風險雷達儀表板</h3>
                     <p>為每位信任圈成員提供客製化的即時風險監控。不是季度 PDF → 是他們每天打開就能看到的風險狀態頁。紅燈/黃燈/綠燈，一目了然。</p>
-                    <div class="tag-inline" style="background:rgba(244,63,94,.06);color:var(--rose2)">Grafana + 客製化儀表板
+                    <div class="tag-inline" style="background:rgba(232,98,26,.06);color:var(--accent2)">Grafana + 客製化儀表板
                     </div>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(16,185,129,.1)">🧠</div>
+                    <div class="cd-icon" style="background:rgba(201,168,76,.1)">🧠</div>
                     <h3>獨家風險評分模型</h3>
                     <p><strong>保險理賠數據 + ESG 風險信號 = 沒有其他人擁有的數據源組合。</strong>用 PyTorch 建立預測模型，提前 3-6 個月預警潛在風險。這是真正的技術壁壘。
                     </p>
-                    <div class="tag-inline" style="background:rgba(16,185,129,.06);color:var(--emerald2)">PyTorch 預測模型 →
+                    <div class="tag-inline" style="background:rgba(201,168,76,.06);color:var(--gold2)">PyTorch 預測模型 →
                         獨家數據護城河</div>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(14,165,233,.1)">⚡</div>
+                    <div class="cd-icon" style="background:rgba(201,168,76,.1)">⚡</div>
                     <h3>自動化預警推播</h3>
                     <p>新法規、產業變動、供應鏈風險 → Prometheus 監控 + 自動 LINE/Telegram 推播給受影響的成員。從「季度報告」進化為「即時保護傘」。</p>
-                    <div class="tag-inline" style="background:rgba(14,165,233,.06);color:var(--teal2)">Prometheus 監控 +
+                    <div class="tag-inline" style="background:rgba(201,168,76,.06);color:var(--gold2)">Prometheus 監控 +
                         LINE Bot 推播</div>
                 </div>
             </div>
@@ -1455,27 +1460,27 @@
 
             <div class="cg" style="grid-template-columns:repeat(2,1fr)">
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(124,106,239,.1)">1️⃣</div>
+                    <div class="cd-icon" style="background:rgba(232,98,26,.1)">1️⃣</div>
                     <h3>信任圈年費</h3>
-                    <p>25人 × NT$80,000 = <strong style="color:var(--emerald2)">NT$200萬/年</strong></p>
+                    <p>25人 × NT$80,000 = <strong style="color:var(--gold2)">NT$200萬/年</strong></p>
                     <p style="margin-top:8px">晚餐圓桌 + 風險預警 + 人脈網路。低門檻，高黏著度，網路效應驅動。</p>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(245,166,35,.1)">2️⃣</div>
+                    <div class="cd-icon" style="background:rgba(201,168,76,.1)">2️⃣</div>
                     <h3>營收分潤組合</h3>
-                    <p>10家存活 × NT$50萬 = <strong style="color:var(--emerald2)">NT$500萬/年</strong></p>
+                    <p>10家存活 × NT$50萬 = <strong style="color:var(--gold2)">NT$500萬/年</strong></p>
                     <p style="margin-top:8px">半價顧問費入場 → 3年期 1-2% 營收分潤。需 15 家建倉，預期淨存活 10 家。</p>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(14,165,233,.1)">3️⃣</div>
+                    <div class="cd-icon" style="background:rgba(232,98,26,.1)">3️⃣</div>
                     <h3>風險儀表板 SaaS</h3>
-                    <p>50用戶 × NT$3,000/月 = <strong style="color:var(--emerald2)">NT$180萬/年</strong></p>
+                    <p>50用戶 × NT$3,000/月 = <strong style="color:var(--gold2)">NT$180萬/年</strong></p>
                     <p style="margin-top:8px">信任圈外的 SME 也能訂閱。獨家數據模型 = 競爭壁壘。可逐步擴展到全台灣。</p>
                 </div>
                 <div class="cd">
-                    <div class="cd-icon" style="background:rgba(16,185,129,.1)">4️⃣</div>
+                    <div class="cd-icon" style="background:rgba(201,168,76,.1)">4️⃣</div>
                     <h3>保險佣金（現有）</h3>
-                    <p>信任圈成員 → 交叉銷售 = <strong style="color:var(--emerald2)">+30% 佣金成長</strong></p>
+                    <p>信任圈成員 → 交叉銷售 = <strong style="color:var(--gold2)">+30% 佣金成長</strong></p>
                     <p style="margin-top:8px">信任圈擴大 → 保險客戶自然增加。現有收入流不會消失，反而被放大。</p>
                 </div>
             </div>
