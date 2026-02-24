@@ -771,17 +771,349 @@
             text-decoration: none
         }
 
-        @media(max-width:600px) {
-            .cta-3 {
-                flex-direction: column
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media(max-width:768px) {
+            .container {
+                padding: 0 16px
             }
 
+            section {
+                padding: 60px 0
+            }
+
+            /* Topbar: stack vertically */
+            .topbar {
+                padding: 10px 0
+            }
+
+            .topbar-inner {
+                flex-direction: column;
+                gap: 6px;
+                align-items: flex-start
+            }
+
+            .topbar-brand {
+                font-size: 13px
+            }
+
+            .topbar-label {
+                font-size: 10px;
+                padding: 3px 10px
+            }
+
+            /* Hero */
+            .hero {
+                padding-top: 80px;
+                min-height: auto;
+                padding-bottom: 60px
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+                line-height: 1.2;
+                margin-bottom: 20px
+            }
+
+            .hero-eyebrow {
+                margin-bottom: 20px
+            }
+
+            .hero-eyebrow .label {
+                font-size: 10px;
+                letter-spacing: 1px
+            }
+
+            .hero-sub {
+                font-size: .95rem;
+                margin-bottom: 28px;
+                line-height: 1.7
+            }
+
+            .hero-intersection {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px
+            }
+
+            .hi-item {
+                padding: 12px
+            }
+
+            .hi-item .emoji {
+                font-size: 20px
+            }
+
+            .hi-item .hi-label {
+                font-size: 11px
+            }
+
+            .hi-item .hi-val {
+                font-size: 12px
+            }
+
+            /* Section headings */
+            .sh {
+                font-size: 1.4rem;
+                margin-bottom: 10px
+            }
+
+            .sh small {
+                font-size: .5em !important
+            }
+
+            .sd {
+                font-size: .9rem;
+                margin-bottom: 32px
+            }
+
+            .stag {
+                font-size: 10px;
+                padding: 4px 12px;
+                letter-spacing: 1px
+            }
+
+            /* First Principles block */
+            .fp-block {
+                padding: 24px 20px;
+                margin: 32px 0;
+                border-radius: 16px
+            }
+
+            .fp-q {
+                font-size: 1rem;
+                line-height: 1.6
+            }
+
+            .fp-a {
+                font-size: 1rem;
+                line-height: 1.7
+            }
+
+            .fp-divider {
+                margin: 16px 0
+            }
+
+            /* Comparison table: horizontal scroll wrapper */
+            .ctb {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin-top: 24px;
+                border-radius: 14px
+            }
+
+            .ctb th,
+            .ctb td {
+                padding: 12px 14px;
+                font-size: .8rem;
+                white-space: nowrap
+            }
+
+            .ctb th {
+                font-size: .7rem
+            }
+
+            /* Cards */
             .cg {
-                grid-template-columns: 1fr
+                grid-template-columns: 1fr;
+                gap: 14px
             }
 
+            .cd {
+                padding: 24px 20px;
+                border-radius: 14px
+            }
+
+            .cd h3 {
+                font-size: .95rem
+            }
+
+            .cd p {
+                font-size: .84rem
+            }
+
+            .cd .tag-inline {
+                font-size: 11px;
+                padding: 4px 12px;
+                margin-top: 8px
+            }
+
+            /* Intersection diagram */
             .ix-diagram {
-                grid-template-columns: 1fr
+                grid-template-columns: 1fr;
+                gap: 14px;
+                margin-top: 32px
+            }
+
+            .ix-card {
+                padding: 24px 20px;
+                border-radius: 14px
+            }
+
+            .ix-card h3 {
+                font-size: 1rem;
+                flex-wrap: wrap
+            }
+
+            .ix-card p {
+                font-size: .84rem
+            }
+
+            .ix-card li {
+                font-size: .84rem;
+                gap: 6px
+            }
+
+            .ix-revenue {
+                font-size: 11px;
+                padding: 4px 12px;
+                margin-top: 10px
+            }
+
+            /* Flow steps */
+            .flow {
+                margin-top: 32px
+            }
+
+            .flow-item {
+                grid-template-columns: 44px 1fr;
+                gap: 14px;
+                padding: 20px 0
+            }
+
+            .flow-n {
+                width: 38px;
+                height: 38px;
+                font-size: .9rem
+            }
+
+            .flow-body h3 {
+                font-size: .92rem
+            }
+
+            .flow-body p {
+                font-size: .84rem
+            }
+
+            .flow-body .metric {
+                font-size: 11px;
+                padding: 5px 12px;
+                line-height: 1.5;
+                white-space: normal;
+                display: block;
+                margin-top: 10px
+            }
+
+            /* Timeline */
+            .tl {
+                padding-left: 28px;
+                margin-top: 32px
+            }
+
+            .tl-item {
+                padding: 0 0 28px 20px
+            }
+
+            .tl-item::before {
+                left: -22px;
+                width: 10px;
+                height: 10px
+            }
+
+            .tl-item h4 {
+                font-size: .9rem
+            }
+
+            .tl-time {
+                font-size: 10px
+            }
+
+            .tl-item p {
+                font-size: .82rem
+            }
+
+            /* Revenue grid on revenue section */
+            .cg[style*="grid-template-columns:repeat(2"] {
+                grid-template-columns: 1fr !important
+            }
+
+            /* CTA */
+            .cta {
+                padding: 60px 0
+            }
+
+            .cta-box {
+                padding: 32px 20px;
+                border-radius: 18px
+            }
+
+            .cta-box h2 {
+                font-size: 1.3rem
+            }
+
+            .cta-box p {
+                font-size: .85rem;
+                margin-bottom: 20px
+            }
+
+            .cta-3 {
+                flex-direction: column;
+                gap: 12px
+            }
+
+            .cta-3>div {
+                padding: 16px;
+                min-width: unset
+            }
+
+            .cta-3 h4 {
+                font-size: .85rem
+            }
+
+            .cta-3 p {
+                font-size: .76rem
+            }
+
+            /* Revenue total block */
+            .fp-block p[style*="font-size:2.8rem"] {
+                font-size: 2rem !important
+            }
+
+            /* Footer */
+            .footer {
+                padding: 28px 0
+            }
+
+            .footer p {
+                font-size: 11px
+            }
+        }
+
+        /* Extra small phones */
+        @media(max-width:380px) {
+            .container {
+                padding: 0 12px
+            }
+
+            .hero h1 {
+                font-size: 1.5rem
+            }
+
+            .fp-q {
+                font-size: .9rem
+            }
+
+            .fp-a {
+                font-size: .9rem
+            }
+
+            .sh {
+                font-size: 1.2rem
+            }
+
+            .ctb th,
+            .ctb td {
+                padding: 10px 10px;
+                font-size: .75rem
             }
         }
     </style>
